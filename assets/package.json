@@ -1,0 +1,39 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "build:dev": "npm run build:tokens && node ./esbuild.mjs",
+    "build:dev:watch": "npm run build:tokens && node ./esbuild.mjs --watch",
+    "build:prod": "npm run build:tokens && node ./esbuild.mjs --deploy",
+    "build:tokens": "style-dictionary build --config ./design-system/config.json",
+    "lint": "npm run lint:prettier && npm run lint:stylelint",
+    "lint:fix": "npm run lint:prettier:fix && npm run lint:stylelint:fix",
+    "lint:prettier": "prettier . --check",
+    "lint:prettier:fix": "prettier . --write",
+    "lint:stylelint": "stylelint css",
+    "lint:stylelint:fix": "stylelint css --fix"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "7.0.2",
+    "autoprefixer": "10.4.20",
+    "esbuild": "0.24.0",
+    "esbuild-plugin-copy": "2.1.1",
+    "esbuild-sass-plugin": "3.3.1",
+    "postcss": "8.4.49",
+    "postcss-preset-env": "10.1.1",
+    "postcss-reporter": "7.1.0",
+    "prettier": "3.4.1",
+    "resolve": "1.22.8",
+    "sass-embedded": "1.81.0",
+    "sass-loader": "16.0.3",
+    "style-dictionary": "^4.3.0",
+    "stylelint": "16.11.0",
+    "stylelint-config-recess-order": "5.1.1",
+    "stylelint-config-standard-scss": "13.1.0",
+    "stylelint-declaration-strict-value": "1.10.6"
+  }
+}

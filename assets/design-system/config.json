@@ -1,0 +1,15 @@
+{
+  "source": ["design-system/tokens/**/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "design-system/build/scss/",
+      "files": [
+        {
+          "destination": "_tokens.scss",
+          "format": "scss/map-deep"
+        }
+      ]
+    }
+  }
+}

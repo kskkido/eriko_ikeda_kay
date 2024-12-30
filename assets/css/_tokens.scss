@@ -1,0 +1,135 @@
+// colors
+$color-text-normal: rgb(55 65 81 / var(--opacity-text)) !default;
+$color-text-emphasized: rgb(31 41 55 / var(--opacity-text)) !default;
+$color-text-subdued: rgb(107 114 128 / var(--opacity-text)) !default;
+$color-background-normal: rgb(255 255 255 / var(--opacity-text)) !default;
+$color-background-subdued: hsl(222deg 10% 99%);
+$color-border-normal: rgb(180 180 180 / var(--opacity-border)) !default;
+$color-border-emphasized: rgb(229 231 235 / var(--opacity-border)) !default;
+$color-border-subdued: rgb(229 231 235 / var(--opacity-border)) !default;
+
+// breakpoints
+$breakpoint-xs: 480px !default;
+$breakpoint-s: 576px !default;
+$breakpoint-m: 768px !default;
+$breakpoint-l: 1024px !default;
+$breakpoint-xl: 1200px !default;
+
+// font-weights
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi: 600 !default;
+$font-weight-bold: 700 !default;
+
+// sizes
+$size-avatar-24: 1.5rem !default;
+$size-avatar-32: 2rem !default;
+$size-avatar-40: 2.5rem !default;
+$size-avatar-48: 3rem !default;
+$size-avatar-56: 3.5rem !default;
+$size-avatar-64: 4rem !default;
+$size-font-h1: clamp(1.5rem, 1.003vw + 1.225rem, 1.7rem) !default;
+$size-font-h2: clamp(1.4rem, 0.762vw + 1.193rem, 1.6rem) !default;
+$size-font-h3: clamp(1.3rem, 0.556vw + 1.157rem, 1.5rem) !default;
+$size-font-h4: clamp(1.2rem, 0.38vw + 1.12rem, 1.4rem) !default;
+$size-font-h5: clamp(1.1rem, 0.231vw + 1.081rem, 1.3rem) !default;
+$size-font-h6: clamp(1rem, 0.105vw + 1.041rem, 1.2rem) !default;
+$size-font-m: 1rem !default;
+$size-font-s: 0.889rem !default;
+$size-font-xs: 0.79rem !default;
+$size-font-xxs: 0.702rem !default;
+$size-icon-s: 0.875rem !default;
+$size-icon-m: 1.25rem !default;
+$size-icon-l: 1.625rem !default;
+$size-line-height-h1: 2rem !default;
+$size-line-height-h2: 2rem !default;
+$size-line-height-h3: 2rem !default;
+$size-line-height-h4: 2rem !default;
+$size-line-height-h5: 2rem !default;
+$size-line-height-h6: 1.5rem !default;
+$size-line-height-m: 1.5rem !default;
+$size-line-height-s: 1.5rem !default;
+$size-line-height-xs: 1.5rem !default;
+$size-line-height-xxs: 1.5rem !default;
+$size-line-1: 1.5rem !default;
+$size-line-2: 3rem !default;
+$size-line-3: 4.5rem !default;
+$size-line-4: 6rem !default;
+$size-line-0-5: 0.75rem !default;
+$size-line-1-5: 2.25rem !default;
+$size-line-2-5: 3.75rem !default;
+$size-gutter: 1.5rem !default;
+$size-measure: 64rem !default;
+$size-spacer-1: 0.25rem !default;
+$size-spacer-2: 0.5rem !default;
+$size-spacer-3: 0.75rem !default;
+$size-spacer-4: 1rem !default;
+$size-spacer-5: 1.25rem !default;
+$size-spacer-6: 1.5rem !default;
+$size-spacer-7: 1.75rem !default;
+$size-spacer-8: 2rem !default;
+
+// border-radius
+$border-rounded-xs: 5px;
+$border-rounded-sm: 10px;
+
+// map
+$tokens: (
+  "color": (
+    "text": (
+      "normal": $color-text-normal,
+      "emphasized": $color-text-emphasized,
+      "subdued": $color-text-subdued,
+    ),
+    "background": (
+      "normal": $color-background-normal,
+    ),
+    "border": (
+      "normal": $color-border-normal,
+      "emphasized": $color-border-emphasized,
+      "subdued": $color-border-subdued,
+    ),
+  ),
+  "breakpoint": (
+    "s": $breakpoint-s,
+    "m": $breakpoint-m,
+    "l": $breakpoint-l,
+    "xl": $breakpoint-xl,
+  ),
+  "size": (
+    "font": (
+      "h1": $size-font-h1,
+      "h2": $size-font-h2,
+      "h3": $size-font-h3,
+      "h4": $size-font-h4,
+      "h5": $size-font-h5,
+      "h6": $size-font-h6,
+      "m": $size-font-m,
+      "s": $size-font-s,
+      "xs": $size-font-xs,
+      "xxs": $size-font-xxs,
+    ),
+    "line-height": (
+      "h1": $size-line-height-h1,
+      "h2": $size-line-height-h2,
+      "h3": $size-line-height-h3,
+      "h4": $size-line-height-h4,
+      "h5": $size-line-height-h5,
+      "h6": $size-line-height-h6,
+      "m": $size-line-height-m,
+      "s": $size-line-height-s,
+      "xs": $size-line-height-xs,
+      "xxs": $size-line-height-xxs,
+    ),
+    "spacer": (
+      "1": $size-spacer-1,
+      "2": $size-spacer-2,
+      "3": $size-spacer-3,
+      "4": $size-spacer-4,
+      "5": $size-spacer-5,
+      "6": $size-spacer-6,
+      "7": $size-spacer-7,
+      "8": $size-spacer-8,
+    ),
+  ),
+);

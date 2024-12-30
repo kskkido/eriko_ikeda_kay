@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "design-system/tokens";
+
+@function get($root, $keys...) {
+  @each $key in $keys {
+    $root: map.get($root, $key);
+  }
+
+  @return $root;
+}
+
+@function get-token($keys...) {
+  @return get(tokens.$tokens, $keys...);
+}
+
+@function spacer($n) {
+  @return $n * get-token("size", "spacer", "1");
+}
+
+@mixin text($text-variant) {
+  font-size: get-token("size", "font", $text-variant);
+  line-height: get-token("size", "line-height", $text-variant);
+}
+
+@mixin color($keys...) {
+  color: get-token("color", $keys...);
+  fill: get-token("color", $keys...);
+  stroke: get-token("color", $keys...);
+}
+
+@mixin border-color($keys...) {
+  border-color: get-token("color", "border", $keys...);
+}

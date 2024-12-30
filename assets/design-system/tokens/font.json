@@ -1,0 +1,23 @@
+{
+  "font": {
+    "family": {
+      "primary": {
+        "value": "Raleway, cronos-pro-subhead, Avenir Next, Avenir, sans-serif"
+      },
+      "secondary": {
+        "value": "Julius Sans One, cronos-pro-subhead, Avenir Next, Avenir, sans-serif"
+      }
+    },
+    "weight": {
+      "normal": {
+        "value": 400
+      },
+      "semibold": {
+        "value": 500
+      },
+      "bold": {
+        "value": 600
+      }
+    }
+  }
+}

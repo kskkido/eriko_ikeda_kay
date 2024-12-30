@@ -1,0 +1,93 @@
+{
+  "size": {
+    "font": {
+      "xs": {
+        "value": "0.79rem"
+      },
+      "sm": {
+        "value": "0.889rem"
+      },
+      "md": {
+        "value": "1rem"
+      },
+      "lg": {
+        "value": "clamp(1.2rem, 0.38vw + 1.12rem, 1.4rem)"
+      },
+      "xl": {
+        "value": "clamp(1.5rem, 1.003vw + 1.225rem, 1.7rem)"
+      }
+    },
+    "line-height": {
+      "xs": {
+        "value": "1.5rem"
+      },
+      "sm": {
+        "value": "1.5rem"
+      },
+      "md": {
+        "value": "1.5rem"
+      },
+      "lg": {
+        "value": "2rem"
+      },
+      "xl": {
+        "value": "2rem"
+      }
+    },
+    "letter-spacing": {
+      "md": {
+        "value": "0"
+      },
+      "lg": {
+        "value": "0.025rem"
+      },
+      "xl": {
+        "value": "0.06rem"
+      }
+    },
+    "spacer": {
+      "1": {
+        "value": "0.25rem"
+      },
+      "2": {
+        "value": "0.5rem"
+      },
+      "3": {
+        "value": "0.75rem"
+      },
+      "4": {
+        "value": "1rem"
+      },
+      "5": {
+        "value": "1.25rem"
+      },
+      "6": {
+        "value": "1.5rem"
+      },
+      "7": {
+        "value": "1.75rem"
+      },
+      "8": {
+        "value": "2rem"
+      }
+    },
+    "border": {
+      "width": {
+        "sm": {
+          "value": "1px"
+        },
+        "md": {
+          "value": "2px"
+        },
+        "lg": {
+          "value": "3px"
+        }
+      },
+      "radius": {
+        "sm": "5px",
+        "md": "10px",
+        "rounded": "9999px"
+      }
+    }
+  }
+}

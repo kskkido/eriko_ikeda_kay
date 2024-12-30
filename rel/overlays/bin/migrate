@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+cd -P -- "$(dirname -- "$0")"
+exec ./eriko_ikeda_kay eval ErikoIkedaKay.Release.migrate

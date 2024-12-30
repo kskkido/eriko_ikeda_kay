@@ -1,0 +1,104 @@
+<body>
+  <div class="app">
+    <div class="app-body">
+      <div class="page">
+      <div class="page-body">
+        <main class="page-content">
+          {@inner_content}
+        </main>
+        <div id="page-body-overlay" class="page-body-overlay">
+        </div>
+      </div>
+      <div class="page-side">
+        <section class="page-side-nav">
+          <ul>
+            <li>
+              <.nav_link path={@current_path} navigate={~p"/"}>
+                About
+              </.nav_link>
+            </li>
+            <li>
+              <.nav_link path={@current_path} navigate={~p"/contact"}>
+                Contact
+              </.nav_link>
+            </li>
+            <li>
+              <.nav_link path={@current_path} navigate={~p"/works"}>
+                Works
+              </.nav_link>
+            </li>
+            <li>
+              <.nav_link path={@current_path} navigate={~p"/tags"}>
+                Tags
+              </.nav_link>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <header class="page-header">
+        <.link class="page-header-logo" navigate={~p"/"}>
+          <img src="/images/logo.jpg" alt={@profile.name} />
+        </.link>
+        <div class="page-header-right">
+          <ul class="language-control">
+            <li class="language-control-locale">
+              <.link>
+                EN
+              </.link>
+            </li>
+            <li class="language-control-locale">
+              <.link>
+                JA
+              </.link>
+            </li>
+          </ul>
+          <button class="page-header-menu-trigger" aria-expanded="false" aria-controls="page-menu-dialog">
+            <Lucide.align_justify width="22px" height="22px" />
+          </button>
+        </div>
+        <div id="page-menu-dialog" class="page-dialog" role="menu">
+          <div class="page-dialog-nav">
+            <ul>
+              <li>
+                <.nav_link path={@current_path} navigate={~p"/"}>
+                  About
+                </.nav_link>
+              </li>
+              <li>
+                <.nav_link path={@current_path} navigate={~p"/contact"}>
+                  Contact
+                </.nav_link>
+              </li>
+              <li>
+                <.nav_link path={@current_path} navigate={~p"/works"}>
+                  Works
+                </.nav_link>
+              </li>
+              <li>
+                <.nav_link path={@current_path} navigate={~p"/tags"}>
+                  Tags
+                </.nav_link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+    </div>
+    <footer class="app-footer">
+      <div class="app-footer-content">
+        <span>
+          {"Copyright © #{DateTime.utc_now().year} | All rights reserved."}
+        </span>
+        <div class="app-footer-content-right">
+          <span>
+            Designed by Rina Tsuchiya ♥
+          </span>
+          <span>
+            Developed by Keisuke Kido ♥
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>

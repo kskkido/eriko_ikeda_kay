@@ -1,0 +1,40 @@
+<div class="contact-page view">
+  <section>
+    <h4 class="font-family-secondary">
+      Contact
+    </h4>
+    <div class="contact">
+      <dl class="contact-info">
+        <dt>
+          Email
+        </dt>
+        <dd>
+          {@profile.email}
+        </dd>
+        <dt>
+          Location
+        </dt>
+        <dd>
+          Tokyo, Japan
+        </dd>
+      </dl>
+      <.form for={%{}} class="contact-form" action={~p"/contact"}>
+        <fieldset>
+          <label>Name</label>
+          <input name="name" type="text" required placeholder="Name..." />
+        </fieldset>
+        <fieldset>
+          <label>Email</label>
+          <input name="email" type="email" required placeholder="Email..." />
+        </fieldset>
+        <fieldset>
+          <label>Message</label>
+          <textarea name="message" required placeholder="Message..." />
+        </fieldset>
+        <button type="submit">
+          Send message
+        </button>
+      </.form>
+    </div>
+  </section>
+</div>

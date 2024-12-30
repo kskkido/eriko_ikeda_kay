@@ -1,0 +1,131 @@
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1200px !default;
+$color-text-subdued: #7793B2 !default;
+$color-text-normal: #5A718A !default;
+$color-text-emphasized: rgb(31 41 55 / 1) !default;
+$color-surface-subdued: rgba(#7793B2, 0.2) !default;
+$color-surface-normal: #F7F4EA !default;
+$color-surface-emphasized: rgb(255 255 255 / 1) !default;
+$color-surface-backdrop: #F7F4EA !default;
+$color-border-subdued: #7793B2 !default;
+$color-border-normal: #7793B2 !default;
+$color-border-emphasized: #7793B2 !default;
+$font-family-primary: Raleway, cronos-pro-subhead, Avenir Next, Avenir, sans-serif !default;
+$font-family-secondary: Julius Sans One, cronos-pro-subhead, Avenir Next, Avenir, sans-serif !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 500 !default;
+$font-weight-bold: 600 !default;
+$size-font-xs: 0.79rem !default;
+$size-font-sm: 0.889rem !default;
+$size-font-md: 1rem !default;
+$size-font-lg: clamp(1.2rem, 0.38vw + 1.12rem, 1.4rem) !default;
+$size-font-xl: clamp(1.5rem, 1.003vw + 1.225rem, 1.7rem) !default;
+$size-line-height-xs: 1.5rem !default;
+$size-line-height-sm: 1.5rem !default;
+$size-line-height-md: 1.5rem !default;
+$size-line-height-lg: 2rem !default;
+$size-line-height-xl: 2rem !default;
+$size-letter-spacing-md: 0 !default;
+$size-letter-spacing-lg: 0.025rem !default;
+$size-letter-spacing-xl: 0.06rem !default;
+$size-spacer-1: 0.25rem !default;
+$size-spacer-2: 0.5rem !default;
+$size-spacer-3: 0.75rem !default;
+$size-spacer-4: 1rem !default;
+$size-spacer-5: 1.25rem !default;
+$size-spacer-6: 1.5rem !default;
+$size-spacer-7: 1.75rem !default;
+$size-spacer-8: 2rem !default;
+$size-border-width-sm: 1px !default;
+$size-border-width-md: 2px !default;
+$size-border-width-lg: 3px !default;
+
+$tokens: (
+  'breakpoint': (
+    'xs': $breakpoint-xs,
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl
+  ),
+  'color': (
+    'text': (
+      'subdued': $color-text-subdued,
+      'normal': $color-text-normal,
+      'emphasized': $color-text-emphasized
+    ),
+    'surface': (
+      'subdued': $color-surface-subdued,
+      'normal': $color-surface-normal,
+      'emphasized': $color-surface-emphasized,
+      'backdrop': $color-surface-backdrop
+    ),
+    'border': (
+      'subdued': $color-border-subdued,
+      'normal': $color-border-normal,
+      'emphasized': $color-border-emphasized
+    )
+  ),
+  'font': (
+    'family': (
+      'primary': $font-family-primary,
+      'secondary': $font-family-secondary
+    ),
+    'weight': (
+      'normal': $font-weight-normal,
+      'semibold': $font-weight-semibold,
+      'bold': $font-weight-bold
+    )
+  ),
+  'size': (
+    'font': (
+      'xs': $size-font-xs,
+      'sm': $size-font-sm,
+      'md': $size-font-md,
+      'lg': $size-font-lg,
+      'xl': $size-font-xl
+    ),
+    'line-height': (
+      'xs': $size-line-height-xs,
+      'sm': $size-line-height-sm,
+      'md': $size-line-height-md,
+      'lg': $size-line-height-lg,
+      'xl': $size-line-height-xl
+    ),
+    'letter-spacing': (
+      'md': $size-letter-spacing-md,
+      'lg': $size-letter-spacing-lg,
+      'xl': $size-letter-spacing-xl
+    ),
+    'spacer': (
+      '1': $size-spacer-1,
+      '2': $size-spacer-2,
+      '3': $size-spacer-3,
+      '4': $size-spacer-4,
+      '5': $size-spacer-5,
+      '6': $size-spacer-6,
+      '7': $size-spacer-7,
+      '8': $size-spacer-8
+    ),
+    'border': (
+      'width': (
+        'sm': $size-border-width-sm,
+        'md': $size-border-width-md,
+        'lg': $size-border-width-lg
+      ),
+      'radius': (
+        'sm': '5px',
+        'md': '10px',
+        'rounded': '9999px'
+      )
+    )
+  )
+);

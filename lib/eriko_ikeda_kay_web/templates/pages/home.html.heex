@@ -1,0 +1,46 @@
+<div class="home-page view">
+  <section class="section" :for={block <- @blocks}>
+    <h4 class="section-heading">
+      {block.title}
+    </h4>
+    <div class="section-body">
+      <figure :if={block.image} class="section-body-cover-image">
+        <.contentful_image image={block.image} />
+        <figcaption>
+          {block.image.description}
+        </figcaption>
+      </figure>
+      <.markdown markdown={block.body} />
+    </div>
+    <ul :if={block.attachments != []} class="attachment-list">
+      <li :for={attachment <- block.attachments} class="text-sm color-text-subdued">
+        <.contentful_file_link file={attachment} />
+      </li>
+    </ul>
+  </section>
+  <hr />
+  <section class="section">
+    <h4 class="section-heading">
+      Contact
+    </h4>
+    <div class="contact">
+      <dl class="contact-info">
+        <dt>
+          Email
+        </dt>
+        <dd>
+          {@profile.email}
+        </dd>
+        <dt>
+          Location
+        </dt>
+        <dd>
+          Tokyo, Japan
+        </dd>
+      </dl>
+      <p>
+        Please reach out via email or through the <.link navigate={~p"/contact"}>contact form</.link>.
+      </p>
+    </div>
+  </section>
+</div>

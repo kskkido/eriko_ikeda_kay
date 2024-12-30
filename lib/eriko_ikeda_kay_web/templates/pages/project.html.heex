@@ -1,0 +1,42 @@
+<div class="project-page view">
+  <section>
+    <div class="project-page-header">
+      <div class="project-page-title">
+        <h4>
+          {@project.title}
+        </h4>
+        <a :if={@project.url} href={@project.url} target="_blank">
+          <.external_link_icon />
+        </a>
+      </div>
+      <div class="project-page-header-meta">
+        <span class="block text-sm color-text-subdued font-family-secondary">
+          {@project.published_at |> DateTime.to_date() |> Date.to_iso8601()}
+        </span>
+        <ul class="tag-list">
+          <li class="text-sm" :for={tag <- @project.tags}>
+            <.link navigate={~p"/tags/#{tag}"}>
+              #{tag}
+            </.link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section no-border">
+    <article class="section-body">
+      <figure :if={@project.image} class="section-body-cover-image">
+        <.contentful_image image={@project.image} />
+        <figcaption>
+          {@project.image.description}
+        </figcaption>
+      </figure>
+      <.markdown markdown={@project.body} />
+    </article>
+    <ul :if={@project.attachments != []} class="attachment-list">
+      <li :for={attachment <- @project.attachments} class="text-sm color-text-subdued">
+        <.contentful_file_link file={attachment} />
+      </li>
+    </ul>
+  </section>
+</div>

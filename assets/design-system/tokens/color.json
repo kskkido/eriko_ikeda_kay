@@ -1,0 +1,40 @@
+{
+  "color": {
+    "text": {
+      "subdued": {
+        "value": "#7793B2"
+      },
+      "normal": {
+        "value": "#5A718A"
+      },
+      "emphasized": {
+        "value": "rgb(31 41 55 / 1)"
+      }
+    },
+    "surface": {
+      "subdued": {
+        "value": "rgba(#7793B2, 0.2)"
+      },
+      "normal": {
+        "value": "#F7F4EA"
+      },
+      "emphasized": {
+        "value": "rgb(255 255 255 / 1)"
+      },
+      "backdrop": {
+        "value": "#F7F4EA"
+      }
+    },
+    "border": {
+      "subdued": {
+        "value": "#7793B2"
+      },
+      "normal": {
+        "value": "#7793B2"
+      },
+      "emphasized": {
+        "value": "#7793B2"
+      }
+    }
+  }
+}

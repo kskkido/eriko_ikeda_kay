@@ -1,0 +1,13 @@
+{
+  "ignoreFiles": ["node_modules"],
+  "plugins": ["stylelint-declaration-strict-value"],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "scss/dollar-variable-colon-space-after": "always-single-line",
+    "scss/operator-no-newline-after": null
+  }
+}
