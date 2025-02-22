@@ -1,0 +1,17 @@
+<div class="tag-page view">
+  <section>
+    <h1 class="inline">
+      #{@tag.name}
+    </h1>
+    <span class="subscript">
+      {length(@tag.projects)}
+    </span>
+  </section>
+  <section class="no-border">
+    <ul class="record-list">
+      <li :for={project <- @tag.projects}>
+        <.project_record locale={@locale} project={project} />
+      </li>
+    </ul>
+  </section>
+</div>

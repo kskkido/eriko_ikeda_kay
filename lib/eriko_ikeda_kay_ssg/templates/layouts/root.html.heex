@@ -1,0 +1,39 @@
+<html>
+  <head lang={@locale}>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content={@data.profile.name} />
+    <meta
+          name="keywords"
+          content={
+          Enum.join(
+            [@data.profile.title, @data.profile.name, "translator", "translation", "japan"],
+            ","
+          )
+          }
+        />
+    <meta name="og:site_name" content={@data.profile.name} />
+    <meta name="og:title" content={assigns[:page_title] || @data.profile.name} />
+    <meta :for={meta <- assigns[:meta_tags] || []} {meta} />
+    <link rel="icon" href="/favicon.ico" />
+    <script
+      async
+      src={"https://www.googletagmanager.com/gtm.js?id=#{GTM.gtm_container_id()}"}
+    >
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+    </script>
+    <title>
+      {assigns[:page_title] || @data.profile.name}
+    </title>
+    <link phx-track-static rel="stylesheet" href="/assets/app.css" />
+    <script defer phx-track-static type="text/javascript" src="/assets/app.js">
+    </script>
+  </head>
+  {render_slot(@inner_block)}
+</html>

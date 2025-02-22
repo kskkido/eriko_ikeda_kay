@@ -1,0 +1,24 @@
+<div class="tags-page view">
+  <section class="font-family-secondary">
+    <h1 class="inline">
+      {gettext("Tags")}
+    </h1>
+    <span class="subscript">
+      {length(@tags)}
+    </span>
+  </section>
+  <section class="no-border">
+    <ul class="record-list">
+      <li :for={tag <- @tags}>
+        <.link class="inline line-height-lg" navigate={localize_path(@locale, "/tags/#{tag.name}")}>
+          <span>
+            #{tag.name}
+          </span>
+        </.link>
+        <span class="subscript">
+          {length(tag.projects)}
+        </span>
+      </li>
+    </ul>
+  </section>
+</div>

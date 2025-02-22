@@ -38,9 +38,6 @@ defmodule ErikoIkedaKay.Contents.ProjectV2 do
     |> validate_required([
       :slug,
       :title,
-      :description,
-      :body,
-      :url,
       :published_at,
       :tags
     ])

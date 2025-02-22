@@ -87,6 +87,10 @@ $text-variants: xs, sm, md, lg, xl;
 
 h1 {
   @include utils.text(xl);
+
+  @media only screen and (min-width: utils.get-token(breakpoint, sm)) {
+    @include utils.text(lg);
+  }
 }
 
 h2,
@@ -98,22 +102,30 @@ h6 {
 }
 
 hr {
-  border: none;
-  border-top: 1px solid utils.get-token(color, border, subdued);
-  color: utils.get-token(color, border, subdued);
-  overflow: visible;
-  text-align: center;
   height: 5px;
   margin: utils.spacer(12) 0;
+  overflow: visible;
+  color: utils.get-token(color, border, subdued);
+  text-align: center;
+  border: none;
+  border-top: 1px solid utils.get-token(color, border, subdued);
 }
 
 hr::after {
-  font-size: 16px;
-  background: utils.get-token(color, surface, backdrop);
-  content: "§";
-  padding: 0 6px;
   position: relative;
   top: -12px;
+  padding: 0 6px;
+  font-size: 16px;
+  content: "§";
+  background: utils.get-token(color, surface, backdrop);
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 :root {
@@ -189,7 +201,7 @@ textarea {
 .app {
   --page-vertical-margin: #{utils.spacer(1)};
   --page-header-height: #{utils.spacer(17)};
-  --max-page-width: 92rem;
+  --max-page-width: 74rem;
   --page-width: min(
     var(--max-page-width),
     calc(100% - 2 * var(--page-vertical-margin))
@@ -220,7 +232,7 @@ textarea {
     &-content {
       position: relative;
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: column-reverse nowrap;
       gap: utils.spacer(1);
       width: min(var(--max-page-width), 95%);
       margin: utils.spacer(2) auto;
@@ -338,6 +350,26 @@ textarea {
 
       @media (min-width: utils.get-token(breakpoint, md)) {
         display: none;
+      }
+
+      &[aria-expanded="false"] {
+        & > * {
+          display: none;
+        }
+
+        & > *[data-expanded="false"] {
+          display: initial;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        & > * {
+          display: none;
+        }
+
+        & > *[data-expanded="true"] {
+          display: initial;
+        }
       }
     }
 
@@ -512,7 +544,8 @@ textarea {
 
   &-body {
     &-cover-image {
-      display: table;
+      display: flex;
+      flex-direction: column;
       float: right;
       width: 100%;
       margin-bottom: utils.spacer(4);
@@ -726,7 +759,7 @@ textarea {
     }
 
     &-description {
-      @include utils.text(xs);
+      @include utils.text(sm);
       @include utils.color("text", "subdued");
     }
   }

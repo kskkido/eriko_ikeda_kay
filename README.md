@@ -1,6 +1,6 @@
 # ErikoIkedaKay
 
-**TODO: Add description**
+Portfolio website built with custom static site generation
 
 ## Installation
 

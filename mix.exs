@@ -35,31 +35,28 @@ defmodule ErikoIkedaKay.MixProject do
       {:ecto_sql, "~> 3.10"},
       {:ecto_ulid_next, "~> 1.0.0"},
       {:gettext, "~> 0.20"},
-      {:google_api_gmail, "~> 0.16.0"},
-      {:goth, "~> 1.4.5"},
       {:lucide_live_view, "~> 0.1.0"},
       {:nimble_parsec, "~> 1.0"},
       {:phoenix, "~> 1.7.14"},
       {:phoenix_html, "~> 4.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 1.0.0"},
-      {:req, "~> 0.5.0"}
+      {:req, "~> 0.5.0"},
+      {:web_dev_utils, "~> 0.2"},
+      {:websock_adapter, "~> 0.5"}
     ]
   end
 
   defp aliases do
     [
-      serve: ["cmd --cd dist python3 -m http.server 8000"],
+      build: ["eriko_ikeda_kay_ssg.build"],
+      "build.deploy": ["assets.deploy", "eriko_ikeda_kay_ssg.build"],
+      serve: ["eriko_ikeda_kay_ssg.server"],
       npm: ["cmd --cd assets npm i"],
       "assets.build": ["cmd --cd assets npm i && npm run build:dev"],
       "assets.build.watch": ["cmd --cd assets npm i && npm run build:dev:watch"],
-      "assets.deploy": [
-        "cmd --cd assets npm i && npm run build:prod",
-        "phx.digest"
-      ],
-      "assets.lint.fix": [
-        "cmd --cd assets npm i && npm run lint:fix"
-      ],
+      "assets.deploy": ["cmd --cd assets npm i && npm run build:prod"],
+      "assets.lint.fix": ["cmd --cd assets npm i && npm run lint:fix"],
       translate: ["gettext.extract --merge --no-fuzzy"]
     ]
   end

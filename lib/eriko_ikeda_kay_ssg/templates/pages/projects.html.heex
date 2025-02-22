@@ -1,0 +1,14 @@
+<div class="projects-page view">
+  <section class="font-family-secondary">
+    <h1 class="inline">
+      {gettext("Select Translations")}
+    </h1>
+  </section>
+  <section class="no-border">
+    <ul class="record-list">
+      <li :for={project <- @projects}>
+        <.project_record locale={@locale} project={project} />
+      </li>
+    </ul>
+  </section>
+</div>

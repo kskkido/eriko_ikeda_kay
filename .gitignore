@@ -31,6 +31,8 @@ node_modules
 
 dist
 
+_dist
+
 /priv/static/assets/
 
 .elixir_ls

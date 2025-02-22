@@ -1,0 +1,98 @@
+<body>
+  <div class="app">
+    <div class="app-body">
+      <div class="page">
+        <div class="page-body">
+          <main class="page-content">
+            {render_slot(@inner_block)}
+          </main>
+          <div id="page-body-overlay" class="page-body-overlay"></div>
+        </div>
+        <div class="page-side">
+          <section class="page-side-nav">
+            <ul>
+              <li>
+                <.nav_link path={@current_path} navigate={localize_path(@locale, "/")}>
+                  {gettext("About")}
+                </.nav_link>
+              </li>
+              <li>
+                <.nav_link path={@current_path} navigate={localize_path(@locale, "/works")}>
+                  {gettext("Works")}
+                </.nav_link>
+              </li>
+              <li :if={length(@data.tags) > 0}>
+                <.nav_link path={@current_path} navigate={localize_path(@locale, "/tags")}>
+                  {gettext("Tags")}
+                </.nav_link>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <header class="page-header">
+          <.link class="page-header-logo" navigate={localize_path(@locale, "/")}>
+            <img src="/images/logo.jpg" alt={@data.profile.name} />
+          </.link>
+          <div class="page-header-right">
+            <ul class="language-control">
+              <li class="language-control-locale">
+                <.nav_link active?={@locale == :en} path={@current_path} navigate={localize_path(:en, @current_path)}>
+                  {gettext("EN")}
+                </.nav_link>
+              </li>
+              <li class="language-control-locale">
+                <.nav_link active?={@locale == :ja} path={@current_path} navigate={localize_path(:ja, @current_path)}>
+                  {gettext("JA")}
+                </.nav_link>
+              </li>
+            </ul>
+            <button
+              class="page-header-menu-trigger"
+              aria-expanded="false"
+              aria-controls="page-menu-dialog"
+              >
+              <Lucide.align_justify width="22px" height="22px" data-expanded="false" />
+              <Lucide.x width="22px" height="22px" data-expanded="true" />
+            </button>
+          </div>
+          <div id="page-menu-dialog" class="page-dialog" role="menu">
+            <div class="page-dialog-nav">
+              <ul>
+                <li>
+                  <.nav_link path={@current_path} navigate={localize_path(@locale, "/")}>
+                    {gettext("About")}
+                  </.nav_link>
+                </li>
+                <li>
+                  <.nav_link path={@current_path} navigate={localize_path(@locale, "/works")}>
+                    {gettext("Works")}
+                  </.nav_link>
+                </li>
+                <li :if={length(@data.tags) > 0}>
+                  <.nav_link path={@current_path} navigate={localize_path(@locale, "/tags")}>
+                    {gettext("Tags")}
+                  </.nav_link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <footer class="app-footer">
+      <div class="app-footer-content">
+        <span>
+          {gettext("Copyright © %{year} | All rights reserved.", year: DateTime.utc_now().year)}
+        </span>
+        <div class="app-footer-content-right">
+          <span>
+            {gettext("Designed by %{name}", name: "Rina Tsuchiya")}
+          </span>
+          <a href="https://github.com/kskkido/eriko_ikeda_kay" _target="blank">
+            {gettext("Developed by %{name}", name: "Keisuke Kido")}
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>

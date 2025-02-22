@@ -1,0 +1,40 @@
+<div class="home-page view">
+  <section class="section" :for={block <- @blocks}>
+    <h1 class="section-heading">
+      {block.title}
+    </h1>
+    <div class="section-body">
+      <figure :if={block.image} class="section-body-cover-image">
+        <.contentful_image image={block.image} />
+        <figcaption>
+          {block.image.description}
+        </figcaption>
+      </figure>
+      <.markdown markdown={block.body} />
+    </div>
+    <ul :if={block.attachments != []} class="attachment-list">
+      <li :for={attachment <- block.attachments} class="text-sm color-text-subdued">
+        <.contentful_file_link file={attachment} />
+      </li>
+    </ul>
+  </section>
+  <hr />
+  <section class="section">
+    <h1 class="section-heading">
+      {gettext("Contact")}
+    </h1>
+    <div class="contact">
+      <p>
+        {gettext("For inquiries regarding rates, availability, or sample translations, please reach out via email.")}
+      </p>
+      <dl class="contact-info">
+        <dt>
+          {gettext("Email")}
+        </dt>
+        <dd>
+          {@profile.email}
+        </dd>
+      </dl>
+    </div>
+  </section>
+</div>
