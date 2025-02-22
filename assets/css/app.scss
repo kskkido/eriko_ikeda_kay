@@ -98,22 +98,22 @@ h6 {
 }
 
 hr {
-  border: none;
-  border-top: 1px solid utils.get-token(color, border, subdued);
-  color: utils.get-token(color, border, subdued);
-  overflow: visible;
-  text-align: center;
   height: 5px;
   margin: utils.spacer(12) 0;
+  overflow: visible;
+  color: utils.get-token(color, border, subdued);
+  text-align: center;
+  border: none;
+  border-top: 1px solid utils.get-token(color, border, subdued);
 }
 
 hr::after {
-  font-size: 16px;
-  background: utils.get-token(color, surface, backdrop);
-  content: "§";
-  padding: 0 6px;
   position: relative;
   top: -12px;
+  padding: 0 6px;
+  font-size: 16px;
+  content: "§";
+  background: utils.get-token(color, surface, backdrop);
 }
 
 :root {
@@ -189,7 +189,7 @@ textarea {
 .app {
   --page-vertical-margin: #{utils.spacer(1)};
   --page-header-height: #{utils.spacer(17)};
-  --max-page-width: 92rem;
+  --max-page-width: 74rem;
   --page-width: min(
     var(--max-page-width),
     calc(100% - 2 * var(--page-vertical-margin))
@@ -512,7 +512,8 @@ textarea {
 
   &-body {
     &-cover-image {
-      display: table;
+      display: flex;
+      flex-direction: column;
       float: right;
       width: 100%;
       margin-bottom: utils.spacer(4);

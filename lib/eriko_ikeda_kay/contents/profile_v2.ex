@@ -9,6 +9,7 @@ defmodule ErikoIkedaKay.Contents.ProfileV2 do
     field :email, :string
     field :name, :string
     field :title, :string
+    field :location, :string
   end
 
   def changeset(%__MODULE__{} = schema, params \\ %{}) do
@@ -17,13 +18,15 @@ defmodule ErikoIkedaKay.Contents.ProfileV2 do
       :slug,
       :name,
       :title,
-      :email
+      :email,
+      :location
     ])
     |> validate_required([
       :slug,
       :name,
       :title,
-      :email
+      :email,
+      :location
     ])
   end
 
@@ -46,7 +49,8 @@ defmodule ErikoIkedaKay.Contents.ProfileV2 do
         slug: fields["slug"],
         email: fields["email"],
         name: fields["name"],
-        title: fields["title"]
+        title: fields["title"],
+        location: fields["location"]
       }
     )
   end

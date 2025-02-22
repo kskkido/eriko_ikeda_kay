@@ -9,12 +9,8 @@ kill_signal = 'SIGTERM'
 
 [build]
 
-[env]
-  PHX_HOST = 'eriko-ikeda-kay.fly.dev'
-  PORT = '8080'
-
 [http_service]
-  internal_port = 8080
+  internal_port = 80
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true

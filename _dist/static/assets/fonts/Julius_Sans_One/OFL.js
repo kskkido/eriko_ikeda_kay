@@ -1,0 +1,98 @@
+(() => {
+  // fonts/Julius_Sans_One/OFL.txt
+  var OFL_default = `Copyright (c) 2012, LatinoType (luciano@latinotype.com), with Reserved Font Names 'Julius'\r
+\r
+This Font Software is licensed under the SIL Open Font License, Version 1.1.\r
+This license is copied below, and is also available with a FAQ at:\r
+https://openfontlicense.org\r
+\r
+\r
+-----------------------------------------------------------\r
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\r
+-----------------------------------------------------------\r
+\r
+PREAMBLE\r
+The goals of the Open Font License (OFL) are to stimulate worldwide\r
+development of collaborative font projects, to support the font creation\r
+efforts of academic and linguistic communities, and to provide a free and\r
+open framework in which fonts may be shared and improved in partnership\r
+with others.\r
+\r
+The OFL allows the licensed fonts to be used, studied, modified and\r
+redistributed freely as long as they are not sold by themselves. The\r
+fonts, including any derivative works, can be bundled, embedded, \r
+redistributed and/or sold with any software provided that any reserved\r
+names are not used by derivative works. The fonts and derivatives,\r
+however, cannot be released under any other type of license. The\r
+requirement for fonts to remain under this license does not apply\r
+to any document created using the fonts or their derivatives.\r
+\r
+DEFINITIONS\r
+"Font Software" refers to the set of files released by the Copyright\r
+Holder(s) under this license and clearly marked as such. This may\r
+include source files, build scripts and documentation.\r
+\r
+"Reserved Font Name" refers to any names specified as such after the\r
+copyright statement(s).\r
+\r
+"Original Version" refers to the collection of Font Software components as\r
+distributed by the Copyright Holder(s).\r
+\r
+"Modified Version" refers to any derivative made by adding to, deleting,\r
+or substituting -- in part or in whole -- any of the components of the\r
+Original Version, by changing formats or by porting the Font Software to a\r
+new environment.\r
+\r
+"Author" refers to any designer, engineer, programmer, technical\r
+writer or other person who contributed to the Font Software.\r
+\r
+PERMISSION & CONDITIONS\r
+Permission is hereby granted, free of charge, to any person obtaining\r
+a copy of the Font Software, to use, study, copy, merge, embed, modify,\r
+redistribute, and sell modified and unmodified copies of the Font\r
+Software, subject to the following conditions:\r
+\r
+1) Neither the Font Software nor any of its individual components,\r
+in Original or Modified Versions, may be sold by itself.\r
+\r
+2) Original or Modified Versions of the Font Software may be bundled,\r
+redistributed and/or sold with any software, provided that each copy\r
+contains the above copyright notice and this license. These can be\r
+included either as stand-alone text files, human-readable headers or\r
+in the appropriate machine-readable metadata fields within text or\r
+binary files as long as those fields can be easily viewed by the user.\r
+\r
+3) No Modified Version of the Font Software may use the Reserved Font\r
+Name(s) unless explicit written permission is granted by the corresponding\r
+Copyright Holder. This restriction only applies to the primary font name as\r
+presented to the users.\r
+\r
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\r
+Software shall not be used to promote, endorse or advertise any\r
+Modified Version, except to acknowledge the contribution(s) of the\r
+Copyright Holder(s) and the Author(s) or with their explicit written\r
+permission.\r
+\r
+5) The Font Software, modified or unmodified, in part or in whole,\r
+must be distributed entirely under this license, and must not be\r
+distributed under any other license. The requirement for fonts to\r
+remain under this license does not apply to any document created\r
+using the Font Software.\r
+\r
+TERMINATION\r
+This license becomes null and void if any of the above conditions are\r
+not met.\r
+\r
+DISCLAIMER\r
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\r
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\r
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\r
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\r
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\r
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\r
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\r
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\r
+OTHER DEALINGS IN THE FONT SOFTWARE.\r
+`;
+})();
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsiLi4vLi4vLi4vLi4vLi4vYXNzZXRzL2ZvbnRzL0p1bGl1c19TYW5zX09uZS9PRkwudHh0Il0sCiAgInNvdXJjZXNDb250ZW50IjogWyJDb3B5cmlnaHQgKGMpIDIwMTIsIExhdGlub1R5cGUgKGx1Y2lhbm9AbGF0aW5vdHlwZS5jb20pLCB3aXRoIFJlc2VydmVkIEZvbnQgTmFtZXMgJ0p1bGl1cydcclxuXHJcblRoaXMgRm9udCBTb2Z0d2FyZSBpcyBsaWNlbnNlZCB1bmRlciB0aGUgU0lMIE9wZW4gRm9udCBMaWNlbnNlLCBWZXJzaW9uIDEuMS5cclxuVGhpcyBsaWNlbnNlIGlzIGNvcGllZCBiZWxvdywgYW5kIGlzIGFsc28gYXZhaWxhYmxlIHdpdGggYSBGQVEgYXQ6XHJcbmh0dHBzOi8vb3BlbmZvbnRsaWNlbnNlLm9yZ1xyXG5cclxuXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcblNJTCBPUEVOIEZPTlQgTElDRU5TRSBWZXJzaW9uIDEuMSAtIDI2IEZlYnJ1YXJ5IDIwMDdcclxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cclxuXHJcblBSRUFNQkxFXHJcblRoZSBnb2FscyBvZiB0aGUgT3BlbiBGb250IExpY2Vuc2UgKE9GTCkgYXJlIHRvIHN0aW11bGF0ZSB3b3JsZHdpZGVcclxuZGV2ZWxvcG1lbnQgb2YgY29sbGFib3JhdGl2ZSBmb250IHByb2plY3RzLCB0byBzdXBwb3J0IHRoZSBmb250IGNyZWF0aW9uXHJcbmVmZm9ydHMgb2YgYWNhZGVtaWMgYW5kIGxpbmd1aXN0aWMgY29tbXVuaXRpZXMsIGFuZCB0byBwcm92aWRlIGEgZnJlZSBhbmRcclxub3BlbiBmcmFtZXdvcmsgaW4gd2hpY2ggZm9udHMgbWF5IGJlIHNoYXJlZCBhbmQgaW1wcm92ZWQgaW4gcGFydG5lcnNoaXBcclxud2l0aCBvdGhlcnMuXHJcblxyXG5UaGUgT0ZMIGFsbG93cyB0aGUgbGljZW5zZWQgZm9udHMgdG8gYmUgdXNlZCwgc3R1ZGllZCwgbW9kaWZpZWQgYW5kXHJcbnJlZGlzdHJpYnV0ZWQgZnJlZWx5IGFzIGxvbmcgYXMgdGhleSBhcmUgbm90IHNvbGQgYnkgdGhlbXNlbHZlcy4gVGhlXHJcbmZvbnRzLCBpbmNsdWRpbmcgYW55IGRlcml2YXRpdmUgd29ya3MsIGNhbiBiZSBidW5kbGVkLCBlbWJlZGRlZCwgXHJcbnJlZGlzdHJpYnV0ZWQgYW5kL29yIHNvbGQgd2l0aCBhbnkgc29mdHdhcmUgcHJvdmlkZWQgdGhhdCBhbnkgcmVzZXJ2ZWRcclxubmFtZXMgYXJlIG5vdCB1c2VkIGJ5IGRlcml2YXRpdmUgd29ya3MuIFRoZSBmb250cyBhbmQgZGVyaXZhdGl2ZXMsXHJcbmhvd2V2ZXIsIGNhbm5vdCBiZSByZWxlYXNlZCB1bmRlciBhbnkgb3RoZXIgdHlwZSBvZiBsaWNlbnNlLiBUaGVcclxucmVxdWlyZW1lbnQgZm9yIGZvbnRzIHRvIHJlbWFpbiB1bmRlciB0aGlzIGxpY2Vuc2UgZG9lcyBub3QgYXBwbHlcclxudG8gYW55IGRvY3VtZW50IGNyZWF0ZWQgdXNpbmcgdGhlIGZvbnRzIG9yIHRoZWlyIGRlcml2YXRpdmVzLlxyXG5cclxuREVGSU5JVElPTlNcclxuXCJGb250IFNvZnR3YXJlXCIgcmVmZXJzIHRvIHRoZSBzZXQgb2YgZmlsZXMgcmVsZWFzZWQgYnkgdGhlIENvcHlyaWdodFxyXG5Ib2xkZXIocykgdW5kZXIgdGhpcyBsaWNlbnNlIGFuZCBjbGVhcmx5IG1hcmtlZCBhcyBzdWNoLiBUaGlzIG1heVxyXG5pbmNsdWRlIHNvdXJjZSBmaWxlcywgYnVpbGQgc2NyaXB0cyBhbmQgZG9jdW1lbnRhdGlvbi5cclxuXHJcblwiUmVzZXJ2ZWQgRm9udCBOYW1lXCIgcmVmZXJzIHRvIGFueSBuYW1lcyBzcGVjaWZpZWQgYXMgc3VjaCBhZnRlciB0aGVcclxuY29weXJpZ2h0IHN0YXRlbWVudChzKS5cclxuXHJcblwiT3JpZ2luYWwgVmVyc2lvblwiIHJlZmVycyB0byB0aGUgY29sbGVjdGlvbiBvZiBGb250IFNvZnR3YXJlIGNvbXBvbmVudHMgYXNcclxuZGlzdHJpYnV0ZWQgYnkgdGhlIENvcHlyaWdodCBIb2xkZXIocykuXHJcblxyXG5cIk1vZGlmaWVkIFZlcnNpb25cIiByZWZlcnMgdG8gYW55IGRlcml2YXRpdmUgbWFkZSBieSBhZGRpbmcgdG8sIGRlbGV0aW5nLFxyXG5vciBzdWJzdGl0dXRpbmcgLS0gaW4gcGFydCBvciBpbiB3aG9sZSAtLSBhbnkgb2YgdGhlIGNvbXBvbmVudHMgb2YgdGhlXHJcbk9yaWdpbmFsIFZlcnNpb24sIGJ5IGNoYW5naW5nIGZvcm1hdHMgb3IgYnkgcG9ydGluZyB0aGUgRm9udCBTb2Z0d2FyZSB0byBhXHJcbm5ldyBlbnZpcm9ubWVudC5cclxuXHJcblwiQXV0aG9yXCIgcmVmZXJzIHRvIGFueSBkZXNpZ25lciwgZW5naW5lZXIsIHByb2dyYW1tZXIsIHRlY2huaWNhbFxyXG53cml0ZXIgb3Igb3RoZXIgcGVyc29uIHdobyBjb250cmlidXRlZCB0byB0aGUgRm9udCBTb2Z0d2FyZS5cclxuXHJcblBFUk1JU1NJT04gJiBDT05ESVRJT05TXHJcblBlcm1pc3Npb24gaXMgaGVyZWJ5IGdyYW50ZWQsIGZyZWUgb2YgY2hhcmdlLCB0byBhbnkgcGVyc29uIG9idGFpbmluZ1xyXG5hIGNvcHkgb2YgdGhlIEZvbnQgU29mdHdhcmUsIHRvIHVzZSwgc3R1ZHksIGNvcHksIG1lcmdlLCBlbWJlZCwgbW9kaWZ5LFxyXG5yZWRpc3RyaWJ1dGUsIGFuZCBzZWxsIG1vZGlmaWVkIGFuZCB1bm1vZGlmaWVkIGNvcGllcyBvZiB0aGUgRm9udFxyXG5Tb2Z0d2FyZSwgc3ViamVjdCB0byB0aGUgZm9sbG93aW5nIGNvbmRpdGlvbnM6XHJcblxyXG4xKSBOZWl0aGVyIHRoZSBGb250IFNvZnR3YXJlIG5vciBhbnkgb2YgaXRzIGluZGl2aWR1YWwgY29tcG9uZW50cyxcclxuaW4gT3JpZ2luYWwgb3IgTW9kaWZpZWQgVmVyc2lvbnMsIG1heSBiZSBzb2xkIGJ5IGl0c2VsZi5cclxuXHJcbjIpIE9yaWdpbmFsIG9yIE1vZGlmaWVkIFZlcnNpb25zIG9mIHRoZSBGb250IFNvZnR3YXJlIG1heSBiZSBidW5kbGVkLFxyXG5yZWRpc3RyaWJ1dGVkIGFuZC9vciBzb2xkIHdpdGggYW55IHNvZnR3YXJlLCBwcm92aWRlZCB0aGF0IGVhY2ggY29weVxyXG5jb250YWlucyB0aGUgYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBsaWNlbnNlLiBUaGVzZSBjYW4gYmVcclxuaW5jbHVkZWQgZWl0aGVyIGFzIHN0YW5kLWFsb25lIHRleHQgZmlsZXMsIGh1bWFuLXJlYWRhYmxlIGhlYWRlcnMgb3JcclxuaW4gdGhlIGFwcHJvcHJpYXRlIG1hY2hpbmUtcmVhZGFibGUgbWV0YWRhdGEgZmllbGRzIHdpdGhpbiB0ZXh0IG9yXHJcbmJpbmFyeSBmaWxlcyBhcyBsb25nIGFzIHRob3NlIGZpZWxkcyBjYW4gYmUgZWFzaWx5IHZpZXdlZCBieSB0aGUgdXNlci5cclxuXHJcbjMpIE5vIE1vZGlmaWVkIFZlcnNpb24gb2YgdGhlIEZvbnQgU29mdHdhcmUgbWF5IHVzZSB0aGUgUmVzZXJ2ZWQgRm9udFxyXG5OYW1lKHMpIHVubGVzcyBleHBsaWNpdCB3cml0dGVuIHBlcm1pc3Npb24gaXMgZ3JhbnRlZCBieSB0aGUgY29ycmVzcG9uZGluZ1xyXG5Db3B5cmlnaHQgSG9sZGVyLiBUaGlzIHJlc3RyaWN0aW9uIG9ubHkgYXBwbGllcyB0byB0aGUgcHJpbWFyeSBmb250IG5hbWUgYXNcclxucHJlc2VudGVkIHRvIHRoZSB1c2Vycy5cclxuXHJcbjQpIFRoZSBuYW1lKHMpIG9mIHRoZSBDb3B5cmlnaHQgSG9sZGVyKHMpIG9yIHRoZSBBdXRob3Iocykgb2YgdGhlIEZvbnRcclxuU29mdHdhcmUgc2hhbGwgbm90IGJlIHVzZWQgdG8gcHJvbW90ZSwgZW5kb3JzZSBvciBhZHZlcnRpc2UgYW55XHJcbk1vZGlmaWVkIFZlcnNpb24sIGV4Y2VwdCB0byBhY2tub3dsZWRnZSB0aGUgY29udHJpYnV0aW9uKHMpIG9mIHRoZVxyXG5Db3B5cmlnaHQgSG9sZGVyKHMpIGFuZCB0aGUgQXV0aG9yKHMpIG9yIHdpdGggdGhlaXIgZXhwbGljaXQgd3JpdHRlblxyXG5wZXJtaXNzaW9uLlxyXG5cclxuNSkgVGhlIEZvbnQgU29mdHdhcmUsIG1vZGlmaWVkIG9yIHVubW9kaWZpZWQsIGluIHBhcnQgb3IgaW4gd2hvbGUsXHJcbm11c3QgYmUgZGlzdHJpYnV0ZWQgZW50aXJlbHkgdW5kZXIgdGhpcyBsaWNlbnNlLCBhbmQgbXVzdCBub3QgYmVcclxuZGlzdHJpYnV0ZWQgdW5kZXIgYW55IG90aGVyIGxpY2Vuc2UuIFRoZSByZXF1aXJlbWVudCBmb3IgZm9udHMgdG9cclxucmVtYWluIHVuZGVyIHRoaXMgbGljZW5zZSBkb2VzIG5vdCBhcHBseSB0byBhbnkgZG9jdW1lbnQgY3JlYXRlZFxyXG51c2luZyB0aGUgRm9udCBTb2Z0d2FyZS5cclxuXHJcblRFUk1JTkFUSU9OXHJcblRoaXMgbGljZW5zZSBiZWNvbWVzIG51bGwgYW5kIHZvaWQgaWYgYW55IG9mIHRoZSBhYm92ZSBjb25kaXRpb25zIGFyZVxyXG5ub3QgbWV0LlxyXG5cclxuRElTQ0xBSU1FUlxyXG5USEUgRk9OVCBTT0ZUV0FSRSBJUyBQUk9WSURFRCBcIkFTIElTXCIsIFdJVEhPVVQgV0FSUkFOVFkgT0YgQU5ZIEtJTkQsXHJcbkVYUFJFU1MgT1IgSU1QTElFRCwgSU5DTFVESU5HIEJVVCBOT1QgTElNSVRFRCBUTyBBTlkgV0FSUkFOVElFUyBPRlxyXG5NRVJDSEFOVEFCSUxJVFksIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUiBQVVJQT1NFIEFORCBOT05JTkZSSU5HRU1FTlRcclxuT0YgQ09QWVJJR0hULCBQQVRFTlQsIFRSQURFTUFSSywgT1IgT1RIRVIgUklHSFQuIElOIE5PIEVWRU5UIFNIQUxMIFRIRVxyXG5DT1BZUklHSFQgSE9MREVSIEJFIExJQUJMRSBGT1IgQU5ZIENMQUlNLCBEQU1BR0VTIE9SIE9USEVSIExJQUJJTElUWSxcclxuSU5DTFVESU5HIEFOWSBHRU5FUkFMLCBTUEVDSUFMLCBJTkRJUkVDVCwgSU5DSURFTlRBTCwgT1IgQ09OU0VRVUVOVElBTFxyXG5EQU1BR0VTLCBXSEVUSEVSIElOIEFOIEFDVElPTiBPRiBDT05UUkFDVCwgVE9SVCBPUiBPVEhFUldJU0UsIEFSSVNJTkdcclxuRlJPTSwgT1VUIE9GIFRIRSBVU0UgT1IgSU5BQklMSVRZIFRPIFVTRSBUSEUgRk9OVCBTT0ZUV0FSRSBPUiBGUk9NXHJcbk9USEVSIERFQUxJTkdTIElOIFRIRSBGT05UIFNPRlRXQVJFLlxyXG4iXSwKICAibWFwcGluZ3MiOiAiOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBOyIsCiAgIm5hbWVzIjogW10KfQo=
