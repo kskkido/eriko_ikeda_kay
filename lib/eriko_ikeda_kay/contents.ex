@@ -70,4 +70,20 @@ defmodule ErikoIkedaKay.Contents do
     blocks
     |> Enum.sort_by(& &1.index, :asc)
   end
+
+  def get_block_description(block) do
+    case Earmark.as_ast(block.body) do
+      {:ok, ast, _} ->
+        ast
+        |> Enum.filter(fn
+          {"p", _, [text], _} when is_binary(text) -> true
+          _ -> false
+        end)
+        |> Enum.map(fn {_, _, [text], _} -> text end)
+        |> List.first()
+
+      _ ->
+        nil
+    end
+  end
 end

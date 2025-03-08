@@ -18,35 +18,66 @@ msgid "Contact"
 msgstr ""
 
 #: lib/eriko_ikeda_kay_ssg/templates/pages/contact.html.heex:9
-#: lib/eriko_ikeda_kay_ssg/templates/pages/home.html.heex:29
+#: lib/eriko_ikeda_kay_ssg/templates/pages/home.html.heex:32
 #, elixir-autogen, elixir-format
 msgid "Email"
 msgstr ""
 
-#: lib/eriko_ikeda_kay_ssg/templates/pages/contact.html.heex:15
-#: lib/eriko_ikeda_kay_ssg/templates/pages/home.html.heex:35
-#, elixir-autogen, elixir-format
-msgid "Location"
-msgstr ""
-
-#: lib/eriko_ikeda_kay_ssg/templates/pages/contact.html.heex:22
-#: lib/eriko_ikeda_kay_ssg/templates/pages/home.html.heex:42
+#: lib/eriko_ikeda_kay_ssg/templates/pages/contact.html.heex:16
 #, elixir-autogen, elixir-format
 msgid "Please reach out via email."
 msgstr ""
 
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:26
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:73
 #: lib/eriko_ikeda_kay_ssg/templates/pages/tags.html.heex:4
 #, elixir-autogen, elixir-format
 msgid "Tags"
 msgstr ""
 
-#: lib/eriko_ikeda_kay_ssg/templates/pages/contact.html.heex:18
-#: lib/eriko_ikeda_kay_ssg/templates/pages/home.html.heex:38
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:21
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:68
 #, elixir-autogen, elixir-format
-msgid "Tokyo, Japan"
+msgid "Works"
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:16
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:63
+#, elixir-autogen, elixir-format
+msgid "About"
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:85
+#, elixir-autogen, elixir-format
+msgid "Copyright © %{year} | All rights reserved."
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:89
+#, elixir-autogen, elixir-format
+msgid "Designed by %{name}"
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:92
+#, elixir-autogen, elixir-format
+msgid "Developed by %{name}"
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:40
+#, elixir-autogen, elixir-format
+msgid "EN"
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/pages/home.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "For inquiries regarding rates, availability, or sample translations, please reach out via email."
+msgstr ""
+
+#: lib/eriko_ikeda_kay_ssg/templates/layouts/page.html.heex:45
+#, elixir-autogen, elixir-format
+msgid "JA"
 msgstr ""
 
 #: lib/eriko_ikeda_kay_ssg/templates/pages/projects.html.heex:4
 #, elixir-autogen, elixir-format
-msgid "Works"
+msgid "Select Translations"
 msgstr ""

@@ -35,7 +35,7 @@ jobs:
           cache: "npm"
           cache-dependency-path: assets/package-lock.json
       - name: Restore elixir dependencies and build cache
-        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+        uses: actions/cache@v4
         with:
           path: |
             _build

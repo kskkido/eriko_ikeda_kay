@@ -7,14 +7,15 @@
           name="keywords"
           content={
           Enum.join(
-            [@data.profile.title, @data.profile.name, "translator", "translation", "japan"],
+            [@data.profile.title, @data.profile.name, "translator", "translation", "japan", "art translator", "art"],
             ","
           )
           }
         />
-    <meta name="og:site_name" content={@data.profile.name} />
-    <meta name="og:title" content={assigns[:page_title] || @data.profile.name} />
-    <meta :for={meta <- assigns[:meta_tags] || []} {meta} />
+    <meta property="og:site_name" content={@data.profile.name} />
+    <meta property="og:title" content={assigns[:page_title] || @data.profile.name} />
+    <meta property="og:locale" content={@locale} />
+    <meta :for={meta <- assigns[:metadata] || []} {meta} />
     <link rel="icon" href="/favicon.ico" />
     <script
       async
